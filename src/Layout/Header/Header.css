@@ -1,0 +1,20 @@
+/* Top Account bar */
+.top_account {
+    background-color: var(--bg-color);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px 25px;
+    gap: 15px;
+}
+.top_account .account_text {
+    max-width: 500px;
+}
+
+@media (max-width: 575px){
+    .top_account{
+        padding: 25px 15px;
+        flex-direction: column;
+    }
+}

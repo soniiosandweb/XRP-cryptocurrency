@@ -1,0 +1,82 @@
+/* SideNav */
+.sidebar_column {
+    max-width: 272px;
+    background-color: var(--bg-color);
+    position: relative;
+}
+.sidenavbar_block {
+    height: 100%;
+    padding: 25px;
+    position: fixed;
+    width: 100%;
+    max-width: 272px;
+}
+.flex-column.navbar-nav {
+    width: 100%;
+    margin-top: 50px;
+    gap: 8px;
+}
+.nav_menu_item {
+    color: #fff;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px !important;
+    font-weight: 600;
+}
+.nav_menu_item.active,
+.nav_menu_item:hover  {
+    color: var(--primary-color) !important;
+    background-color: var(--body-bg);
+    border-radius: 5px;
+}
+.nav_menu_item .menu_icon{
+    width: 20px;
+    object-fit: contain;
+    filter: brightness(0) invert(1);
+}
+.nav_menu_item.active .menu_icon,
+.nav_menu_item:hover .menu_icon{
+    filter: unset;
+}
+
+@media (max-width: 991px){
+    .sidebar_column{
+        max-width: 120px;
+    }
+    .sidenavbar_block {
+        padding: 25px 10px;
+        max-width: 120px;
+    }
+    .nav_menu_item {
+        flex-direction: column;
+    }
+    .navbar-brand .xrp-logo {
+        max-width: 100px;
+        object-fit: contain;
+    }
+}
+
+@media (max-width: 767px){
+    .sidebar_column{
+        max-width: 100%;
+    }
+    .sidenavbar_block {
+        padding: 25px 15px;
+        max-width: 100%;
+        position: relative;
+    }
+    .main_block_row {
+        flex-direction: column;
+        height: auto !important;
+    }
+    .nav_menu_item {
+        flex-direction: row;
+    }
+}
+
+@media (max-width: 575px){
+    .flex-column.navbar-nav {
+        margin-top: 30px;
+    }
+}
