@@ -99,7 +99,7 @@ const Exchange = () => {
                 </div>
                 <div className="exchange_body">
                     <div className="step1 exchange_step">
-                        <h5 className="exchange_heading mb-4">Select Pair  1/4</h5>
+                        <h5 className="exchange_heading mb-4">Select Pair 1/4</h5>
 
                         <div className="exchange_currency">
                             <p className="small-p">You Send</p>
